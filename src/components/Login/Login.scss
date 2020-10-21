@@ -1,0 +1,29 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+
+
+  &__telegram {
+
+    >img {
+      object-fit: contain;
+      height: 150px;
+    }
+  }
+
+   &__button{
+     width: 300px;
+     color: #fff !important;
+     background: rgb(2, 150, 190) !important;
+
+     &:hover {
+       color: rgb(2, 150, 190) !important;
+       background: #fff !important;
+     }
+   }
+}

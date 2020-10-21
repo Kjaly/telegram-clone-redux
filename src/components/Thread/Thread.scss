@@ -1,0 +1,77 @@
+.thread {
+  display: flex;
+  flex: .65;
+  flex-direction: column;
+  height: 100vh;
+  color: #fff;
+
+  &__header {
+    border-bottom: 1px solid rgba(190, 190, 190, 0.1);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__contents {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+  }
+
+  &__seen {
+    font-weight: 500;
+    color: gray;
+  }
+
+  &__details {
+    color: #fff;
+
+    &:hover {
+      color: rgba(2, 150, 199, 1);
+    }
+  }
+
+  &__messages {
+    flex: 1;
+    overflow: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__input {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: none;
+    border-top: 1px solid rgba(190, 190, 190, .1);
+
+    form {
+      display: flex;
+      flex: 1;
+
+      > input {
+        width: 98%;
+        outline: none;
+        border: none;
+        background: none;
+        padding: 5px;
+        color: white;
+      }
+
+      > button {
+        color: white;
+
+        &:hover {
+          color: rgba(2, 150, 199, 1);
+        }
+      }
+    }
+
+  }
+}

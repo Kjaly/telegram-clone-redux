@@ -1,0 +1,63 @@
+.sidebar {
+  flex: .35;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  border-right: 1px solid rgba(190, 190, 190, .1);
+
+
+  &__header {
+    display: flex;
+    height: 50px;
+    padding: 10px;
+    align-items: center;
+  }
+
+  &__search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    background: #2d4671;
+    color: #fff;
+    border-radius:5px ;
+    padding: 2px;
+  }
+  &__input {
+    border: none;
+    background: transparent;
+    outline: none;
+    color: #fff;
+
+  }
+  &__button{
+    color: #fff !important
+  }
+  &__threads{
+    overflow-y:scroll;
+    flex:1;
+    &::-webkit-scrollbar{
+      display: none;
+    }
+  }
+  &__bottom{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 20px;
+    border-top: 1px solid rgba(190,190,190,0.1);
+    > button{
+      color: #fff;
+
+      &:hover{
+        color: rgba(2,150,199,1);
+      }
+    }
+  }
+  &__avatar{
+    cursor: pointer;
+    &:hover{
+      opacity: .5;
+    }
+  }
+}

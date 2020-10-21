@@ -1,0 +1,36 @@
+.message{
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: fit-content;
+  justify-content: space-between;
+  margin: 15px;
+
+  &__contents{
+    background: gray;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: auto;
+    margin:10px;
+    >p{
+      color: #fff;
+    }
+    >small{
+      position: absolute;
+      font-size: 8px;
+      right: 0;
+      bottom: -10px;
+    }
+  }
+  &__sender{
+    margin-left: auto;
+
+    > .message__contents{
+      background: rgb(2,150,199);
+    }
+    > .message__photo{
+      order: 1;
+
+    }
+  }
+}
